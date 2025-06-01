@@ -174,4 +174,13 @@ main {
         align-items: center;
         gap: .8rem;
     }
+    i {
+        font-size: 2rem;
+    }
+
+    bottom {
+        border: none;
+        background: none;
+        color: var(--always-white);
+    }
 }
