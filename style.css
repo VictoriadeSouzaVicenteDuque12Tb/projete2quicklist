@@ -51,7 +51,7 @@ header {
 
     h1{
         font-size: 2.4rem;
-        color: var(--background-primary);
+        color: var(--content-primary);
         line-height: 3.2rem;
     }
     
@@ -80,6 +80,64 @@ main {
         }
         &:focus{
             border: 2px solid var(--color-brand);
+        }
+    }
+    button {
+        background: var(--color-brand);
+        border: none;
+        color: var(--always-white);
+        width: 100%;
+        padding: 1rem 2.4rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        border-radius: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover{
+            background: var(--color-brand-hover);
+        }
+
+    }
+}
+.list {
+    .item{
+        background: var(--background-secondary);
+        padding: 1.2rem;
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        border-radius: 1.2rem;
+        box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
+
+        div {
+            display: flex;
+            gap: 1.2rem;
+            align-items: baseline;
+        }
+        input {
+            display: none;
+        }
+        .custom-checkbox {
+            width: 1.6rem;
+            height: 1.6rem;
+            border: 1px solid var(--border-primary);
+            border-radius: .6rem;
+        }
+
+        div:has(input:checked) {
+            .custom-checked {
+                background: var(--color-brand);
+                border: var(--color-brand);
+                transition: .2rem;
+            }
+            label {
+                text-decoration: line-through;
+            }
         }
     }
 }
