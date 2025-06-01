@@ -56,3 +56,7 @@ header {
     }
     
 }
+main {
+    max-width: 62.7;
+    margin-inline: auto;
+}
