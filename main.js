@@ -42,6 +42,10 @@ function removeItem(itemName){
 
     divWarning.classList.remove("hide-warning")
 
+    setTimeout(() => {
+        divWarning.classList.add("hide-warning")
+    }, 4000)
+
     if(itemIndex !== -1){
         items.splice(itemIndex, 1)
     }
